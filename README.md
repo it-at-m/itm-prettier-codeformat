@@ -10,7 +10,7 @@ as a base configuration and be extended with your own rules.
 
 ## Roadmap
 
-See the [open issues](/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues) for a full list of proposed features (and known issues).
 
 ## Set up possibilities
 
