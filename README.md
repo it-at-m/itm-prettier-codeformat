@@ -10,6 +10,10 @@ This configuration is intended to be used with TypeScript-based projects, but mi
 
 * [NPM](https://www.npmjs.com/)
 
+### Using
+
+* [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
+
 ### Requirements
 
 * [Prettier](https://prettier.io/) 3.x.x
@@ -20,16 +24,19 @@ This configuration is intended to be used with TypeScript-based projects, but mi
 Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. this configuration assumes you are using
 **Typescript 5.2.2** in your project. This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
 
-
-### Using
-
-* [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
-
-## Roadmap
+### Roadmap
 
 See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues) for a full list of proposed features (and known issues).
 
-## Set up possibilities
+### Installation
+
+Install the package as dev dependency via your desired package manager, e.g.
+
+```bash
+npm install -D @muenchen/prettier-codeformat
+```
+
+### Set up possibilities
 
 1. Configure Prettier by defining the standard configuration inside `package.json`
 
@@ -51,7 +58,7 @@ Further information can be found on the official [Prettier documentation](https:
 
 **Information**: Overriding the settings of this configuration is currently not possible (opposed to as stated in the Prettier documentation).
 
-## Contributing
+### Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -68,11 +75,11 @@ Don't forget to give the project a star! Thanks again!
 More about this in the [CODE_OF_CONDUCT](/CODE_OF_CONDUCT.md) file.
 
 
-## License
+### License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) file for more information.
 
 
-## Contact
+### Contact
 
 it@M - opensource@muenchen.de
