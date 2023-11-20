@@ -4,6 +4,8 @@ Provides the it@M code formatter rules for [Prettier](https://prettier.io/) as a
 standard configuration for projects using Prettier as formatting tool. Alternatively, this configuration can be used
 as a base configuration and be extended with your own rules.
 
+This configuration is intended to be used with TypeScript-based projects, but might also work with vanilla JavaScript projects.
+
 ### Built With
 
 * [NPM](https://www.npmjs.com/)
