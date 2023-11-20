@@ -4,7 +4,22 @@
  */
 const muenchenPrettierCodeFormat = {
     $schema: "https://json.schemastore.org/prettierrc",
+    printWidth: 80,
+    tabWidth: 2,
+    useTabs: false,
+    semi: true,
+    singleQuote: false,
+    quoteProps: "as-needed",
+    jsxSingleQuote: false,
     trailingComma: "es5",
+    bracketSpacing: true,
+    bracketSameLine: false,
+    arrowParens: "always",
+    proseWrap: "preserve",
+    htmlWhitespaceSensitivity: "css",
+    vueIndentScriptAndStyle: false,
+    endOfLine: "lf",
+    embeddedLanguageFormatting: "auto",
     singleAttributePerLine: true,
     plugins: ["@ianvs/prettier-plugin-sort-imports"],
     importOrder: [
