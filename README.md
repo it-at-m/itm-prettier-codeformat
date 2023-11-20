@@ -8,6 +8,10 @@ as a base configuration and be extended with your own rules.
 
 * [NPM](https://www.npmjs.com/)
 
+### Using
+
+* [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
+
 ## Roadmap
 
 See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues) for a full list of proposed features (and known issues).
@@ -24,7 +28,7 @@ See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues)
 }
 ```
 
-2. Extend the configuration with your own rules using `.prettierrc.js`
+2. Extend the configuration with your own rules (or override given ones) using `.prettierrc.js`
 
 ```javascript
 import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
@@ -36,6 +40,26 @@ export default {
 ```
 
 Further information can be found on the official [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations)
+
+### Important: Overriding Typescript Version
+
+Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. By default, this configuration assumes you are using
+**Typescript 5.2.2** in your project.
+If that is not the case, override your TypeScript Version by using
+
+```javascript
+import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
+
+export default {
+  ...muenchenPrettierCodeFormat,
+  importOrderTypeScriptVersion: "5.0.0"
+};
+```
+
+Setting the correct TypeScript version for every minor or patch version of TypeScript might not necessarily be needed for this configuration to work,
+but may unlock additional formatting rules related to new TypeScript features the plugins offer.
+
+This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
 
 ## Contributing
 

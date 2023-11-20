@@ -1,5 +1,5 @@
 /**
- * This configuration only overrides specific settings where desired configuration options differ from Prettier standards.
+ * This configuration only overrides specific settings where desired configuration options differ from Prettier standards. Additionally, it configures various Prettier plugins.
  * @type {{singleAttributePerLine: boolean, trailingComma: string}}
  */
 const muenchenPrettierCodeFormat = {

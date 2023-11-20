@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/it-at-m/itm-prettier-codeformat/issues"
   },
-  "homepage": "https://github.com/it-at-m/itm-prettier-codeformat#readme"
+  "homepage": "https://github.com/it-at-m/itm-prettier-codeformat#readme",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1"
+  }
 }
