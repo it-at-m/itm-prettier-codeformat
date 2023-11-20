@@ -10,6 +10,17 @@ This configuration is intended to be used with TypeScript-based projects, but mi
 
 * [NPM](https://www.npmjs.com/)
 
+### Requirements
+
+* [Prettier](https://prettier.io/) 3.x.x
+* [TypeScript](https://www.typescriptlang.org/) 5.2.2
+
+**Information**: The configuration might also work with older versions but was not tested. 
+
+Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. this configuration assumes you are using
+**Typescript 5.2.2** in your project. This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
+
+
 ### Using
 
 * [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
@@ -30,38 +41,15 @@ See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues)
 }
 ```
 
-2. Extend the configuration with your own rules (or override given ones) using `.prettierrc.js`
+2. Configure Prettier by defining the standard configuration inside `.prettierrc.json`
 
-```javascript
-import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
-
-export default {
-  ...muenchenPrettierCodeFormat,
-  semi: false,
-};
+```json
+"@muenchen/prettier-codeformat"
 ```
 
 Further information can be found on the official [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations)
 
-### Important: Overriding Typescript Version
-
-Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. By default, this configuration assumes you are using
-**Typescript 5.2.2** in your project.
-If that is not the case, override your TypeScript Version by using
-
-```javascript
-import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
-
-export default {
-  ...muenchenPrettierCodeFormat,
-  importOrderTypeScriptVersion: "5.0.0"
-};
-```
-
-Setting the correct TypeScript version for every minor or patch version of TypeScript might not necessarily be needed for this configuration to work,
-but may unlock additional formatting rules related to new TypeScript features the plugins offer.
-
-This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
+**Information**: Overriding the settings of this configuration is currently not possible (opposed to as stated in the Prettier documentation).
 
 ## Contributing
 
