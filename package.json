@@ -1,0 +1,29 @@
+{
+  "name": "@muenchen/prettier-codeformat",
+  "version": "0.0.1",
+  "description": "it@M codeformatter rules for Prettier",
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/it-at-m/itm-prettier-codeformat.git"
+  },
+  "keywords": [
+    "codeformatter",
+    "prettier",
+    "configuration"
+  ],
+  "author": "it@M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/it-at-m/itm-prettier-codeformat/issues"
+  },
+  "homepage": "https://github.com/it-at-m/itm-prettier-codeformat#readme"
+}
