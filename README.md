@@ -16,8 +16,9 @@ This configuration is intended to be used with TypeScript-based projects, but mi
 
 ### Requirements
 
-* [Prettier](https://prettier.io/) 3.x.x
-* [TypeScript](https://www.typescriptlang.org/) 5.2.2
+* [Prettier](https://prettier.io/) 3.x.x or higher
+* [TypeScript](https://www.typescriptlang.org/) 5.2.2 or higher
+* [Node](https://nodejs.org/en) 14.x.x or higher
 
 **Information**: The configuration might also work with older versions but was not tested. 
 
@@ -67,8 +68,8 @@ Don't forget to give the project a star! Thanks again!
 
 1. Open an issue using the appropriate template (bug report, feature request)
 2. Fork the Project
-3. Create your branch (`git checkout -b feature/AmazingFeature`)
-4. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Create your branch
+4. Commit your changes with commit messages following the convention of [Angular](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
 5. Push to the branch (`git push origin feature/AmazingFeature`)
 6. Open a pull request
 
