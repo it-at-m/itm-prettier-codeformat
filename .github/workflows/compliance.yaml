@@ -1,0 +1,22 @@
+name: compliance
+
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # for checkout
+      security-events: read # to get dependencies for compliance even on PRs
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Advance Security Policy as Code
+        uses: advanced-security/policy-as-code@v2.5.0
+        with:
+          policy: it-at-m/policy-as-code
+          policy-path: default.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          argvs: '--disable-dependabot --disable-secret-scanning --disable-code-scanning --display'
