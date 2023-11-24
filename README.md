@@ -1,5 +1,22 @@
 # itm-prettier-codeformat
 
+[![Made with love by it@M][made-with-love-shield]][itm-opensource]
+[![GitHub license][license-shield]][license]
+[![GitHub release version][github-release-shield]][releases]
+[![NPM release version][npm-release-shield]][npm]
+
+[made-with-love-shield]: https://img.shields.io/badge/made%20with%20%E2%9D%A4%20by-it%40M-yellow?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/it-at-m/itm-prettier-codeformat?style=for-the-badge
+[github-release-shield]: https://img.shields.io/github/v/release/it-at-m/itm-prettier-codeformat?style=for-the-badge
+[npm-release-shield]: https://img.shields.io/npm/v/%40muenchen%2Fprettier-codeformat?style=for-the-badge
+
+[itm-opensource]: https://opensource.muenchen.de/
+[license]: https://github.com/it-at-m/itm-prettier-codeformat/blob/main/LICENSE
+[releases]: https://github.com/it-at-m/itm-prettier-codeformat/releases
+[npm]: https://www.npmjs.com/package/@muenchen/prettier-codeformat
+
+### About this project
+
 Provides the it@M code formatter rules for [Prettier](https://prettier.io/) as an artifact so that they can be used as a
 standard configuration for projects using Prettier as formatting tool. Alternatively, this configuration can be used
 as a base configuration and be extended with your own rules.
