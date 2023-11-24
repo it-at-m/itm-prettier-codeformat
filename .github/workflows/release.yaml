@@ -1,4 +1,4 @@
-name: build and test
+name: Release GitHub and NPM
 
 on:
   push:
@@ -8,7 +8,7 @@ env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
