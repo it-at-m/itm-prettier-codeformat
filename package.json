@@ -1,6 +1,6 @@
 {
   "name": "@muenchen/prettier-codeformat",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "it@M codeformatter rules for Prettier",
   "main": "src/index.json",
   "repository": {
