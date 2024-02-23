@@ -30,7 +30,7 @@
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.3",
-    "semantic-release": "^22.0.8"
+    "semantic-release": "^23.0.0"
   },
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1"
