@@ -18,9 +18,6 @@
     "url": "https://github.com/it-at-m/itm-prettier-codeformat/issues"
   },
   "homepage": "https://github.com/it-at-m/itm-prettier-codeformat#readme",
-  "engines": {
-    "node": ">=14"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -29,8 +26,8 @@
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.3",
-    "semantic-release": "^23.0.0"
+    "@semantic-release/github": "^10.0.0",
+    "semantic-release": "^24.0.0"
   },
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1"

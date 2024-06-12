@@ -15,7 +15,7 @@
 [releases]: https://github.com/it-at-m/itm-prettier-codeformat/releases
 [npm]: https://www.npmjs.com/package/@muenchen/prettier-codeformat
 
-### About this project
+## About this project
 
 Provides the it@M code formatter rules for [Prettier](https://prettier.io/) as an artifact so that they can be used as a
 standard configuration for projects using Prettier as formatting tool. Alternatively, this configuration can be used
@@ -23,30 +23,29 @@ as a base configuration and be extended with your own rules.
 
 This configuration is intended to be used with TypeScript-based projects, but might also work with vanilla JavaScript projects.
 
-### Built With
+## Built With
 
 * [NPM](https://www.npmjs.com/)
 
-### Using
+## Using
 
 * [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)
 
-### Requirements
+## Requirements
 
 * [Prettier](https://prettier.io/) 3.x.x or higher
 * [TypeScript](https://www.typescriptlang.org/) 5.2.2 or higher
-* [Node](https://nodejs.org/en) 14.x.x or higher
 
-**Information**: The configuration might also work with older versions but was not tested. 
+**Information**: The configuration might also work with older versions but was not tested.
 
 Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. this configuration assumes you are using
 **Typescript 5.2.2** in your project. This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
 
-### Roadmap
+## Roadmap
 
 See the [open issues](https://github.com/it-at-m/itm-prettier-codeformat/issues) for a full list of proposed features (and known issues).
 
-### Installation
+## Installation
 
 Install the package as dev dependency via your desired package manager, e.g.
 
@@ -54,7 +53,7 @@ Install the package as dev dependency via your desired package manager, e.g.
 npm install -D @muenchen/prettier-codeformat
 ```
 
-### Set up possibilities
+## Set up possibilities
 
 1. Configure Prettier by defining the standard configuration inside `package.json`
 
@@ -76,7 +75,12 @@ Further information can be found on the official [Prettier documentation](https:
 
 **Information**: Overriding the settings of this configuration is currently not possible (opposed to as stated in the Prettier documentation).
 
-### Contributing
+## Development
+
+To further develop this configuration you need to be able to run the development dependencies for releases with `semantic-release` on your machine.
+This requires at least Node 20.x on your system (and in the GitHub Actions pipeline).
+
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -92,12 +96,10 @@ Don't forget to give the project a star! Thanks again!
 
 More about this in the [CODE_OF_CONDUCT](/CODE_OF_CONDUCT.md) file.
 
-
-### License
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) file for more information.
 
-
-### Contact
+## Contact
 
 it@M - opensource@muenchen.de
