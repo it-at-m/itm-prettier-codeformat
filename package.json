@@ -1,6 +1,6 @@
 {
   "name": "@muenchen/prettier-codeformat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "it@M codeformatter rules for Prettier",
   "main": "src/index.json",
   "repository": {
@@ -18,9 +18,6 @@
     "url": "https://github.com/it-at-m/itm-prettier-codeformat/issues"
   },
   "homepage": "https://github.com/it-at-m/itm-prettier-codeformat#readme",
-  "engines": {
-    "node": ">=14"
-  },
   "publishConfig": {
     "access": "public"
   },
