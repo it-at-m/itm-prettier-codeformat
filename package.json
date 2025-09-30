@@ -2,7 +2,8 @@
   "name": "@muenchen/prettier-codeformat",
   "version": "1.0.2",
   "description": "it@M codeformatter rules for Prettier",
-  "main": "src/index.json",
+  "type": "module",
+  "exports": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/it-at-m/itm-prettier-codeformat.git"

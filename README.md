@@ -38,8 +38,8 @@ This configuration is intended to be used with TypeScript-based projects, but mi
 
 **Information**: The configuration might also work with older versions but was not tested.
 
-Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. this configuration assumes you are using
-**Typescript 5.2.2** in your project. This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
+Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. This configuration assumes you are using
+**Typescript 5.2.2** in your project, but this [can be overwritten if needed](#important-overriding-typescript-version).
 
 ## Roadmap
 
@@ -73,7 +73,41 @@ npm install -D @muenchen/prettier-codeformat
 
 Further information can be found on the official [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations)
 
-**Information**: Overriding the settings of this configuration is currently not possible (opposed to as stated in the Prettier documentation).
+To **extend** the configuration to overwrite some properties from the shared configuration, import the file in a `.prettierrc.mjs` file and export the modifications, e.g:
+
+```js
+import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
+
+/**
+ * @type {import("prettier").Config}
+ */
+const config = {
+  ...muenchenPrettierCodeFormat,
+  endOfLine: "auto",
+};
+
+export default config;
+```
+
+### Important: Overriding Typescript Version
+
+Some Prettier plugins (like [@ianvs/prettier-plugin-sort-imports](https://github.com/IanVS/prettier-plugin-sort-imports)) need information about the TypeScript version used in your project. By default, this configuration assumes you are using
+**Typescript 5.2.2** in your project.
+If that is not the case, override your TypeScript Version by using
+
+```javascript
+import muenchenPrettierCodeFormat from "@muenchen/prettier-codeformat";
+
+export default {
+  ...muenchenPrettierCodeFormat,
+  importOrderTypeScriptVersion: "5.0.0"
+};
+```
+
+Setting the correct TypeScript version for every minor or patch version of TypeScript might not necessarily be needed for this configuration to work,
+but may unlock additional formatting rules related to new TypeScript features the plugins offer.
+
+This configuration will be updated regulary to always set the **latest minor version** of TypeScript.
 
 ## Development
 
