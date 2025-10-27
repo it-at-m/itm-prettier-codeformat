@@ -12,7 +12,7 @@ jobs:
       security-events: read # to get dependencies for compliance even on PRs
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Advance Security Policy as Code
         uses: advanced-security/policy-as-code@v2.7.3
         with:

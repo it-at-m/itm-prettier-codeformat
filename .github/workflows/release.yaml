@@ -3,10 +3,6 @@ name: Release GitHub and NPM
 on:
   push:
     branches: ['main']
-    
-permissions:
-  id-token: write  # Required for OIDC
-  contents: read
 
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -15,14 +11,15 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
+      id-token: write  # Required for OIDC
       contents: write
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
       - name: install dependencies from package-lock.json
