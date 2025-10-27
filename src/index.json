@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/prettierrc",
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
   "printWidth": 80,
   "tabWidth": 2,
   "useTabs": false,
@@ -17,7 +18,6 @@
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
   "singleAttributePerLine": true,
-  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
   "importOrder": [
     "<BUILTIN_MODULES>",
     "",
